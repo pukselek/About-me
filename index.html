@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>About Me</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script>
+        window.addEventListener("load", () => {
+            const main = document.querySelector("main");
+            const loading = document.getElementById("loading");
+            
+            if (loading) {
+                loading.style.opacity = "0";
+                loading.classList.add("hidden");
+                setTimeout(() => {
+                    loading.remove();
+                }, 3000);
+            }
+
+            if (main) {
+                main.style.display = "block";
+            }
+        });
+    </script>
+    <body> 
+        <div id="loading">
+            <label>Loading Website!</label>
+        </div>
+        <header><div></div></header>
+        <main>
+            <div class="main-bio">
+                <div class="main-icon">
+                    <img src="images/chibi_pfp.png" alt="picture">
+                    <label>MY WEBSITE</label>
+                </div>
+                <div class="buttons-list">
+                    <label>
+                        <img src="images/github.svg" alt="Github-Icon">
+                        <a href="https://github.com/pukselek">Github</a>
+                    </label>
+                    <label>
+                        <img src="images/tiktok.svg" alt="TikTok-Icon">
+                        <a href="https://www.tiktok.com/@villerneart?_r=1&_t=ZN-98xuxmOEBGw">TikTok</a>
+                    </label>
+                    <label>
+                        <img src="images/itchdotio.svg" alt="ItchIo-Icon">
+                        <a href="https://villerneart.itch.io/">Itch Io</a>
+                    </label>
+                </div>
+            </div>
+
+            <h2>WHO AM I?</h2>
+
+            <div class="informations">
+                <div class="about">
+                    <label>HI I'm Villerne!</label>
+                </div>
+                <div class="message">
+                    <ul>
+                        <li>
+                            <p>
+                                I'm a developer from Poland who makes indie games in Godot and Roblox Studio, and also simple websites and some trinkets
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                I'm also an artist creating 2D art for games, and in my free time, I'm learning animation
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Programming languages i know:
+                                <ul class="list">
+                                    <li>LUA</li>
+                                    <li>LUAU</li>
+                                    <li>PYTHON</li>
+                                    <li>GDScript</li>
+                                    <li>C++</li>
+                                    <li>C</li>
+                                    <li>C#</li>
+                                    <li>TYPESCRIPT</li>
+                                    <li>JAVASCRIPT</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Other languages
+                                <ul class="list">
+                                    <li>HTML I CSS</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Programming languages I'm learning
+                                <ul class="list">
+                                    <li>RUST</li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
